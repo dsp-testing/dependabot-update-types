@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm' # See documentation for possible values
+    directory: '/' # Location of package manifest
+    schedule:
+      interval: 'daily' # How often to check for updates
+      time: '07:00'
+      timezone: 'Europe/London'
+    open-pull-requests-limit: 15
+    groups:
+      patch-updates:
+        applies-to: version-updates
+        update-types:
+          - 'patch'
+      minor-updates:
+        applies-to: version-updates
+        update-types:
+          - 'minor'
