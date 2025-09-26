@@ -16,3 +16,4 @@ updates:
         applies-to: version-updates
         update-types:
           - 'minor'
+
